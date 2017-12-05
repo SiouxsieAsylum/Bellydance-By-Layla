@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Costuming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster+Two|Cinzel" rel="stylesheet">
 	<style>
@@ -9,15 +11,15 @@
 /*heading has a background image this time*/
 		#heading {
 			background-image: url(images/background-design.jpg);
-			background-size: 75%;
-			background-position: 0 0;
+			background-size: cover;
+			background-position: 50% 50%;
 			background-repeat: no-repeat;
 		}
 /*sizing and positioning of #header #img*/
 		#heading img {
-		height: 100vh;
-		width: auto;
-		padding-left: 20vw;
+		/*height: 100vh;*/
+		/*width: auto;*/
+/*		padding-left: 20vw;*/
 		padding-top: 10vh;
   		}
 
@@ -26,18 +28,17 @@
 		color: rgb(247, 198, 255);
 		text-shadow: 0px 0px 10px rgb(228, 68, 255);
 		position: relative;
-		font-size: 50px;
+		font-size: 5vw;
 		margin: 0;
 		}
 
 		a h2:hover{
 		color: white;
 		text-shadow: 0px 0px 10px rgb(235, 124, 255);
-		}	
+		}
 
 		#links-container {
 		margin-top: 4vh;
-		/*padding top keeps the back-to-top link from sticking directly to the top of the words*/
 		padding-top: 6vh;
 		height: 100px;
 		width: 100vw;
@@ -72,8 +73,10 @@
 		}
 
 		.advertisement h2 {
-			margin-top: -90px;
-			margin-left: -15px;
+      font-size: 4.5vw;
+      margin:0;
+			margin-top: -5vh;
+			/*margin-left: -15px;*/
 		}
 
 		.content {
@@ -99,7 +102,6 @@
 			margin: 1vh 3vw 1vh;
 			padding: 1vh 3vw 1vh 3vw;
 			background-color: rgba(219, 219, 219, 0.2);
-			/*color: white;*/
 			color:rgb(123, 78, 135);
 			border: 10px solid white;
 			font-family: 'Cinzel', serif;
@@ -123,29 +125,34 @@
 			z-index: 2;
 		}
 
+    #bra-title,#skirt-title,#wing-title,#beledi-title{
+      font-weight: bold;
+      font-size: 2vw;
+    }
+
 /*background images of each .slides*/
 		#teal-bra {
 			background-image: url(images/costuming/teal-bra-belt.jpg);
-			background-position: 0 -9vh;
+			/*background-position: 0 -9vh;*/
 		}
 		#purple-bra {
 			background-image: url(images/costuming/purple-bra-belt.jpg);
-			background-position: 0 -9vh;
+			/*background-position: 0 -9vh;*/
 		}
 
 		#teal-skirt {
 			background-image: url(images/costuming/teal-skirt.jpg);
-			background-position: 0 -29vh;
+			/*background-position: 0 -29vh;*/
 		}
 
 		#purple-skirt {
 			background-image: url(images/costuming/purple-skirt.jpg);
-			background-position: 0 -45vh;
+			/*background-position: 0 -45vh;*/
 		}
 
 		#multi-skirt {
 			background-image: url(images/costuming/multi-rampi-skirt.jpg);
-			background-position: 0 -45vh;
+			/*background-position: 0 -45vh;*/
 		}
 
 		#gold{
@@ -160,12 +167,12 @@
 
 		#black-dress {
 			background-image: url(images/costuming/velour-black-beledi.jpg);
-			background-position: 0 -30vh;
+			/*background-position: 0 -30vh;*/
 		}
 
 		#purple-dress {
 			background-image: url(images/costuming/purple-beledi-front-copy.jpg);
-			background-position: 0 -15vh;
+			/*background-position: 0 -15vh;*/
 		}
 
 		/*anchor to top of page*/
@@ -176,6 +183,64 @@
 			bottom: 0;
 			right: 0;
 		}
+
+    @media screen and (max-width: 700px){
+      .advertisement{
+        flex-direction: column-reverse;
+        height:90vh;
+      }
+
+      #teal-bra {
+
+      background-position: 0 -9vh;
+      }
+      #purple-bra {
+
+      background-position: 0 -9vh;
+       }
+
+    #teal-skirt {
+      background-position: 0 -45vh;
+    }
+
+    #purple-skirt {
+      background-position: 0 -45vh;
+    }
+
+    #multi-skirt {
+      background-position: 0 -45vh;
+    }
+
+    #white {
+      background-position: 0 -10vh;
+    }
+
+     #black-dress {
+      background-position: 0 -35vh;
+    }
+
+    #purple-dress {
+      background-position: 0 -25vh;
+    }
+
+    #links-container {
+    padding-top: 10vh;
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  a h2 {
+    font-size: 8vw;
+  }
+
+    .content,.slides{
+        height:40vh;
+        width:70vw;
+      }
+    }
 
 	</style>
 </head>
@@ -207,7 +272,7 @@
 <a href="#bras-and-belts"><h2>Bras and Belts</h2></a><a href="#skirts"><h2>Skirts</h2></a><a href="#wings"><h2>Wings</h2></a><a href="#beledi-dresses"><h2>Beledi Dresses</h2></a></div>
 
 <div id="ads-container">
-	
+
 	<!-- bras and belts for sale slideshow -->
 	<div class="advertisement" id="bras-and-belts">
 	<h2>Bras and Belts</h2>
@@ -219,7 +284,7 @@
 
 			<!-- back to top (#links-container)-->
 			<a href="#links-container"><img id="arrow" src="images/arrow.png"></a>
-			
+
 		</div>
 
 		<div class="slideshow" id="bra-belt" >
@@ -227,11 +292,11 @@
 				<div class="slides bra" id="purple-bra"></div>
 		</div>
 	</div>
-	
+
 	<!-- skirts for sale slideshow -->
  	<div class="advertisement" id="skirts">
 	<h2>Skirts</h2>
-		
+
 		<div class="content">
 		<h3 id="skirt-title"></h3>
 			<button onclick ="plusSkirtDivs()"> Next </button>
@@ -240,19 +305,19 @@
 
 			<!-- back to top (#links-container)-->
 			<a href="#links-container"><img id="arrow" src="images/arrow.png"></a>
-			
-		</div>	
-		
+
+		</div>
+
 		<div class="slideshow" id="skirt-slides">
 
 				<div class="slides skirt" id="teal-skirt">div</div>
 				<div class="slides skirt" id="purple-skirt">div</div>
 				<div class="slides skirt" id="multi-skirt">div</div>
-				
+
 		</div>
 
 	</div>
-	
+
 	<!-- wings for sale slideshow -->
 	<div class="advertisement" id="wings">
 	<h2>Wings</h2>
@@ -265,12 +330,12 @@
 			<!-- back to top (#links-container)-->
 			<a href="#links-container"><img id="arrow" src="images/arrow.png"></a>
 		</div>
-		
+
 		<div class="slideshow" id="wing-slides">
 
 				<div class="slides wings" id="gold"></div>
 				<div class="slides wings" id="white"></div>
-				
+
 		</div>
 	</div>
 
@@ -290,7 +355,7 @@
       			<div class="slides beledi" id="black-dress"></div>
 				<div class="slides beledi" id="purple-dress"></div>
 		</div>
-	</div> 
+	</div>
 
 	<!-- <a href="#links-container"><img id="arrow" src="images/arrow.png"></a> -->
 
@@ -303,7 +368,7 @@
 <script type="text/javascript">
 
 
-// Arrays for content are declared here. The "____Title"s  are the headers for each item for sale. The "____Text" is the caption for each. 
+// Arrays for content are declared here. The "____Title"s  are the headers for each item for sale. The "____Text" is the caption for each.
 
 
 
@@ -492,12 +557,12 @@ function showDressDivs(){
 //adapted from https://stackoverflow.com/questions/30716616/how-can-i-subtract-pixels-from-offset-value
 
 	$(document).ready(function(){
-		$("h2").click(function(){	
+		$("h2").click(function(){
 			var linked = $(this).parent().attr("href");
 			var off = $(linked).offset();
 			$('html,body').animate({
 				scrollTop: off.top - 90}, 'slow');
-			
+
 		});
 	});
 </script>

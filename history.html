@@ -2,23 +2,19 @@
 <html>
 <head>
 	<title>About Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster+Two|Cinzel" rel="stylesheet">
 
 	<style>
 
-	#heading{
-		/*padding: 0;*/
-      /*left: 10vw;*/
-      bottom:10vw;
-      left:20vw;
-    /*top:5vh;*/
-	}
 
 /*background picture is a stage*/
 	#heading img {
-	/*height: 110vh;*/
-  	/*padding-bottom: 80vh;*/
+	height: 110vh;
+  width:auto;
+
   	/*padding-right: 10vw;*/
   	}
 
@@ -26,14 +22,21 @@
   	#layla {
   		height: 90vh;
   		position: absolute;
-  		padding-top:10vh;
+  		top:20vh;
   	}
 
-  	.content{
+  	.content {
   		background-color: rgba(76, 64, 79, 0.5);
+      height:60vh;
+      width:60vw;
+      overflow:scroll;
   		margin-top: 15vh;
   		margin-left: 38vw;
 	}
+
+  .content p {
+    font-size:1.5vw;
+  }
 
 	/*anchor link to bellydance america*/
 	#bda{
@@ -66,10 +69,9 @@
 
 <div class="container">
 	<div id="heading">
-		<!-- because setting this as the background image of heading would rotate it -->
 		<img src="images/background-stage.jpeg">
 	</div>
-</div>
+
 
 <img id ="layla" src="images/transparent/transparent-serena-dress-copy.png">
 
@@ -85,6 +87,7 @@
 		<br>
 	Currently, Layla has partnered with <a id="bda" href="http://www.bellydanceamerica.com/">Bellydance America</a> to bring this beautiful art and glorious costuming to a wider audience of the NYC area. Her passion has shaped the careers of many a talented dancer, and has helped to shape the footprint of bellydance on New York’s City’s famous arts.
 	</p>
+  </div>
 </div>
 
 <script type="text/javascript" src="scripts.js"></script>

@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster+Two|Cinzel" rel="stylesheet">
 
@@ -14,16 +16,13 @@
 	/*radial gradient for a subtle curve to the black and white behind the photo*/
 	#heading {
 		background: radial-gradient(circle, rgb(0,0,0) 30%, rgb(255,255,255));
-		background-position: -80vh -80vw;
+		/*background-position: -80vh -80vw;*/
 	}
 
 /*transparent padding right and bottom to align within the diagonal div*/
 	#heading img {
-		height: 100vh;
-		width: auto;
-  		padding-bottom: 60vh;
-  		padding-right: 10vh;
-	}
+    padding-right: 100vw;
+  }
 
 	h1 {
 		font-size: 200px;
@@ -161,7 +160,7 @@
 		width: 100vw;
 		height: auto;
 	}
- 
+
 	</style>
 
 
@@ -256,7 +255,7 @@
 	<span><a href="#close" class="close">X</a></span>
       <div class="formatting">
       		<img src="images/layla-events-donna-summer.jpg">
-			
+
 		</div>
   </div>
 
@@ -293,7 +292,7 @@ var raqsText="Mohamed Shahin and Bellydance America present the 5th Annual NYC C
 
 //getting children of a div by classname adapted from https://stackoverflow.com/questions/12166753/how-to-get-child-element-by-class-name
 
-// javascript to expose the thumbnail picture, "click me" modal launch, and to toggle the <section> and set the text. 
+// javascript to expose the thumbnail picture, "click me" modal launch, and to toggle the <section> and set the text.
 function dropdownExpand(){
 	for(let n = 0; n < names.length; n++) {
 	// console.log(dates[n].style.width);
@@ -363,10 +362,10 @@ function dropdownExpand(){
             			$("#text").html(raqsText);
             			$("#flyer").attr("src","images/layla-events-raq-cairo.jpg");
 					}
-            		
+
 
        		});
- 
+
 		});
 	}
 }

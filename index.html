@@ -3,26 +3,15 @@
 <head>
 
 	<title>Bellydancing by Layla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster+Two|Cinzel" rel="stylesheet">
 
 <style>
-/*flexed to center #main-image and text*/
-		.container {
-			display: flex;
-			flex-direction: column;
-		}
-/*because #main-image kept popping behind the header*/
-		#heading{
-			z-index: -1;
-		}
 
 		#heading img {
-		width: 150vh;
-		padding-top: 30vh;
-		padding-right: 40vw;
-
-
+      margin-left: -45vw;
 		}
 /*image of layla centered in the */
 		#main-image {
@@ -30,6 +19,7 @@
 			height: 90vh;
 			width: 700px;
 			/*align-self: center;*/
+      z-index: -1;
       margin:0 auto;
       left:60vw;
 			bottom: 1vh;
@@ -47,10 +37,16 @@
 		}
 			/*h1*/
 		#main-layla {
+       z-index: 1;
+       top:30vh;
+       left:-20vw;
+      /*text-align: center;*/
+      font-size: 25vw;
 			transition-delay: 1s;
 		}
 			/*h2*/
 		#professional {
+            z-index: 1;
 			transition-delay: 2s;
 		}
 
@@ -80,13 +76,13 @@
 	</div>
 
 	<div id="main-image"></div>
-</div>
+
 
 
 
 <h1 id="main-layla">Layla</h1>
 <h2 id="professional">Professional Bellydance Artist</h2>
-
+</div>
 
 
 <!-- Modal landing page-->
